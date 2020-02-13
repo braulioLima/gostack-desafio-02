@@ -13,7 +13,7 @@ export default async (req, res, next) => {
     return res.status(401).json({ error: 'Token not provided' });
   }
 
-  const [, token] = authHeader;
+  const [, token] = authHeader.split(' ');
 
   try {
     const { id } = await promisify(jwt.verify)(token, authConfig.secret);
