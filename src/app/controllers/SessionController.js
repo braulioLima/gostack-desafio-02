@@ -23,28 +23,34 @@ class SessionController {
 
     const { email, password } = req.body;
 
-    const user = await User.findOne({ where: { email } });
+    try {
+      const user = await User.findOne({ where: { email } });
 
-    if (!user) {
-      return res.status(401).json({ error: 'User not found' });
+      if (!user) {
+        return res.status(401).json({ error: 'User not found' });
+      }
+
+      if (!(await user.checkPassword(password))) {
+        return res.status(401).json({ error: 'Password does not match' });
+      }
+
+      const { id, name } = user;
+
+      return res.json({
+        user: {
+          id,
+          name,
+          email,
+        },
+        token: jwt.sign({ id }, authConfig.secret, {
+          expiresIn: authConfig.expires_in,
+        }),
+      });
+    } catch (error) {
+      return res
+        .status(500)
+        .json({ error: 'Sorry, we have problems... try later...' });
     }
-
-    if (!(await user.checkPassword(password))) {
-      return res.status(401).json({ error: 'Password does not match' });
-    }
-
-    const { id, name } = user;
-
-    return res.json({
-      user: {
-        id,
-        name,
-        email,
-      },
-      token: jwt.sign({ id }, authConfig.secret, {
-        expiresIn: authConfig.expires_in,
-      }),
-    });
   }
 }
 
