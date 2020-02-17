@@ -74,39 +74,33 @@ class RecipientController {
       return res.status(400).json({ error: 'Validation fails' });
     }
 
-    try {
-      const recipient = await Recipient.findByPk(req.params.id);
+    const recipient = await Recipient.findByPk(req.params.id);
 
-      if (!recipient) {
-        return res.status(400).json({ error: 'Recipient not found' });
-      }
-
-      const {
-        id,
-        name,
-        street,
-        number,
-        complement,
-        state,
-        city,
-        zip_code,
-      } = await recipient.update(req.body);
-
-      return res.json({
-        id,
-        name,
-        street,
-        number,
-        complement,
-        state,
-        city,
-        zip_code,
-      });
-    } catch (error) {
-      return res
-        .status(500)
-        .json({ error: 'Sorry, we have a problem...try later...' });
+    if (!recipient) {
+      return res.status(400).json({ error: 'Recipient not found' });
     }
+
+    const {
+      id,
+      name,
+      street,
+      number,
+      complement,
+      state,
+      city,
+      zip_code,
+    } = await recipient.update(req.body);
+
+    return res.json({
+      id,
+      name,
+      street,
+      number,
+      complement,
+      state,
+      city,
+      zip_code,
+    });
   }
 }
 
