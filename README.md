@@ -1,12 +1,64 @@
-# Desafio 02 do bootcamp GoStack Rocketseat. FastFeet API
 
-## Descrição:
+<h1 align="center">
+  <img alt="Fastfeet" title="Fastfeet" src=".github/logo.png" width="300px" />
+</h1>
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/braulioLima/gostack-desafio-02?color=%2304D361">
+
+  <a href="https://rocketseat.com.br">
+    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-BraulioLima-%2304D361">
+  </a>
+
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
+
+  <a href="https://github.com/Rocketseat/bootcamp-gostack-desafio-03/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/braulioLima/gostack-desafio-02?style=social">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias-empregadas">Tecnologias empregadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#modo-de-usar">Modo de usar</a>
+</p>
+
+## Sobre o desafio:
 Neste desafio foi dado início a construção da API da aplicação FastFeet, uma aplicação de entrega de encomendas.
 
 ## Tecnologias empregadas:
+Foram empregadas no desafio as seguintes tecnologias nas seguintes versões. Adicionalmente foi adicionado: o [Husky](https://github.com/typicode/husky), [@commitlint/cli](https://github.com/conventional-changelog/commitlint) e o [lint-staged](https://github.com/okonet/lint-staged) e suas dependências. Foram adicionadas para padronização de commits e lint automático de código.
+
+- [bcryptjs@2.4.3](https://github.com/dcodeIO/bcrypt.js)
+- [@commitlint/cli: @8.3.5"](https://github.com/conventional-changelog/commitlint)
+- [@commitlint/config-conventional: @8.3.4](https://github.com/conventional-changelog/commitlint)
+- [commitizen: @4.0.3](https://github.com/commitizen/cz-cli)
+- [cz-conventional-changelog: @3.1.0](https://github.com/commitizen/cz-conventional-changelog)
+- [eslint: @6.8.0](https://github.com/eslint/eslint)
+- [eslint-config-airbnb-base: @14.0.0](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+- [eslint-config-prettier: @6.10.0](https://github.com/prettier/eslint-config-prettier)
+- [eslint-plugin-import: @2.20.1](https://github.com/benmosher/eslint-plugin-import)
+- [eslint-plugin-prettier: @3.1.2](https://github.com/prettier/eslint-plugin-prettier)
+- [express@4.17.1](https://github.com/expressjs)
+- [Husky: @4.2.3](https://github.com/typicode/husky)
+- [jsonwebtoken@8.5.1](https://github.com/auth0/node-jsonwebtoken)
+- [lint-staged: @10.0.7](https://github.com/okonet/lint-staged)
+- [pg@7.18.1](https://github.com/brianc/node-postgres)
+- [pg-hstore@2.3.3](https://github.com/scarney81/pg-hstore)
+- [nodemon: @2.0.2](https://github.com/remy/nodemon)
+- [prettier: @1.19.1](https://github.com/prettier/prettier)
+- [sequelize@5.21.4](https://github.com/sequelize/sequelize)
+- [sequelize-cli: @5.5.1](https://github.com/sequelize/cli)
+- [sucrase: @3.12.1](https://github.com/alangpierce/sucrase)
+- [yup@0.28.1](https://github.com/jquense/yup)
 
 ## Pre-requisitos:
-Para rodar a aplicação é necessário possuir o Node.js na versão 12.x, yarn ou npm para rodar.
+<p>
+  Para rodar a aplicação é necessário possuir o Node.js na versão 12.x, <img src="https://img.shields.io/badge/Yarn-V1.22.0-blue" alt="Yarn-logo"/> ou <img alt="npm-logo" src="https://img.shields.io/npm/v/npm?style=plastic"/> para rodar.
+</p>
+
+
+## Modo de usar:
 
 ### Para usuários do Yarn:
 ```bash
