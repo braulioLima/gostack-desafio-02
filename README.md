@@ -7,7 +7,7 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/braulioLima/gostack-desafio-02?color=%2304D361">
 
  <a href="https://github.com/braulioLima/">
-    <img alt="Made by BraulioLima" src="https://img.shields.io/badge/Braulio%20Lima-Made%20by%20Braulio%20Lima-%2304D361">
+    <img alt="Made by BraulioLima" src="https://img.shields.io/badge/Braulio%20Lima-Made%20by%20Braulio%20Lima-bri">
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
