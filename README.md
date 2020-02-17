@@ -4,7 +4,8 @@
 </h1>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/braulioLima/gostack-desafio-02?color=%2304D361">
+
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/braulioLima/gostack-desafio-02?color=%232304D361&style=plastic">
 
  <a href="https://github.com/braulioLima/">
     <img alt="Made by BraulioLima" src="https://img.shields.io/badge/Braulio%20Lima-Made%20by%20Braulio%20Lima-bri">
@@ -12,7 +13,7 @@
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 
-  <a href="https://github.com/Rocketseat/bootcamp-gostack-desafio-03/stargazers">
+  <a href="https://github.com/braulioLima/gostack-desafio-02/stargazers">
     <img alt="Stargazers" src="https://img.shields.io/github/stars/braulioLima/gostack-desafio-02?style=social">
   </a>
 </p>
