@@ -60,6 +60,10 @@ Foram empregadas no desafio as seguintes tecnologias nas seguintes versões. Adi
 
 ## Modo de usar:
 
+Se for usuário do [insominia](https://insomnia.rest/download/) import pra ver as rotas:
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=FastFeet-API&uri=https%3A%2F%2Fgithub.com%2FbraulioLima%2Fgostack-desafio-02%2Fblob%2Fdesafio-02%2F.insomnia-routes%2Ffastfeet-routes.json)
+
 ### Para usuários do Yarn:
 ```bash
 yarn dev
